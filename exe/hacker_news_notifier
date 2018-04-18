@@ -1,0 +1,3 @@
+#!/usr/bin/env ruby
+
+require "hacker_news_notifier"
