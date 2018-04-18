@@ -6,6 +6,7 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
+    json (2.1.0)
     minitest (5.8.5)
     rake (10.4.2)
 
@@ -15,6 +16,7 @@ PLATFORMS
 DEPENDENCIES
   bundler (~> 1.16)
   hacker_news_notifier!
+  json (~> 2.1)
   minitest (~> 5.0)
   rake (~> 10.0)
 
