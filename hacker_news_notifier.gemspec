@@ -7,11 +7,11 @@ Gem::Specification.new do |spec|
   spec.name          = "hacker_news_notifier"
   spec.version       = HackerNewsNotifier::VERSION
   spec.authors       = ["William Li"]
-  spec.email         = ["wul@microsoft.com"]
+  spec.email         = ["williaml33@outlook.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = "demo for port adapter simulator"
+  spec.description   = ""
+  spec.homepage      = ""
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
