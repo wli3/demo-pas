@@ -6,7 +6,7 @@ module HackerNewsNotifier
     def title_exists(title, top)
       raise ArgumentError, 'Top max is 500' if top > 500
       if top <= 1 || !(top.is_a? Integer)
-        raise ArgumentError, 'Top min is 1 and interger'
+        raise ArgumentError, 'Top min is 1 and integer'
       end
 
       url = 'https://hacker-news.firebaseio.com/v0/topstories.json'
