@@ -3,8 +3,7 @@ require 'json'
 
 module HackerNewsNotifier
   class TitleChecker
-    def title_exists title, top
-
+    def title_exists(title, top)
       url = 'https://hacker-news.firebaseio.com/v0/topstories.json'
       response = RestClient.get(url)
       paresed = JSON.parse(response).first top
@@ -12,13 +11,10 @@ module HackerNewsNotifier
       paresed.each do |item_id|
         item_url = "https://hacker-news.firebaseio.com/v0/item/#{item_id}.json"
         item_response = RestClient.get(item_url)
-        if JSON.parse(item_response)["title"].include? title
-          return true
-        end
+        return true if JSON.parse(item_response)['title'].include? title
       end
 
       false
     end
   end
 end
-
