@@ -1,6 +1,6 @@
 require 'rest-client'
 
-module UserNotifier
+module HackerNewsNotifier
   class Ping
     def ping
       url = ''
