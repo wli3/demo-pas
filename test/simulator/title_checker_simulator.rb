@@ -6,7 +6,7 @@ class TitleCheckerSimulator
     end
 
     fake_list = (1..500).collect(&:to_s)
-    fake_list[0] = 'Dumber phone'
+    fake_list[0] = 'Lessons learned from a failing local mall'
 
     fake_list.first(top).each do |item|
       return true if item.include? title
