@@ -3,3 +3,4 @@ require 'hacker_news_notifier'
 
 require 'minitest/autorun'
 require 'simulator/title_checker_simulator'
+require 'simulator/ping_simulator'
