@@ -1,5 +1,4 @@
 class PingSimulator
-
   @acknowledged = false
 
   def ping
@@ -7,6 +6,6 @@ class PingSimulator
   end
 
   def acknowledged?
-    return @acknowledged
+    @acknowledged
   end
 end

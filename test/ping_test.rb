@@ -5,11 +5,9 @@ class PingTest < Minitest::Test
     real = UserNotifier::Ping.new
     simulator = PingSimulator.new
     [
-        # real,
-        simulator
-    ].each do |sut|
-      sut.ping
-    end
+      # real,
+      simulator
+    ].each(&:ping)
     assert simulator.acknowledged? == true
   end
 end
