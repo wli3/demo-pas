@@ -8,3 +8,6 @@ gemspec
 # Added at 2018-04-17 18:13:38 -0700 by williamli:
 gem 'json', '~> 2.1'
 gem 'rest-client', '~> 2.0.2'
+
+# Added at 2018-04-28 20:17:23 -0700 by williamli:
+gem 'minitest-stub-const', '~> 0.6'
