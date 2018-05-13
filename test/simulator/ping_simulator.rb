@@ -1,7 +1,6 @@
 class PingSimulator
-
   def initialize
-      @acknowledged = false
+    @acknowledged = false
   end
 
   def ping
