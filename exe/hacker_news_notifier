@@ -1,3 +1,8 @@
 #!/usr/bin/env ruby
 
 require 'hacker_news_notifier'
+
+raise 'Only support one argument which is the title name' if ARGV.length != 1
+
+notifier = HackerNewsNotifier::Notifier.new
+notifier.check ARGV.first
