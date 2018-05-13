@@ -34,7 +34,10 @@ class TitleCheckerTest < Minitest::Test
   def test_check_non_exists_title_exists_in_top_10_it_returns_false
     real = HackerNewsNotifier::TitleChecker.new
     simulator = TitleCheckerSimulator.new
-    [real, simulator].each do |sut|
+    [
+      # skip integration real,
+      simulator
+    ].each do |sut|
       assert sut.title_exists('non exists title', 10) == false
     end
   end
@@ -42,7 +45,10 @@ class TitleCheckerTest < Minitest::Test
   def test_check_exists_title_exists_in_top_10_it_returns_true
     real = HackerNewsNotifier::TitleChecker.new
     simulator = TitleCheckerSimulator.new
-    [real, simulator].each do |sut|
+    [
+      # skip integration real,
+      simulator
+    ].each do |sut|
       assert sut.title_exists('Lessons learned from a failing local mall', 10) == true
     end
   end
